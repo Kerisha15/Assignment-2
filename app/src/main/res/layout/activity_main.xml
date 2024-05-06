@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:backgroundTint="#AD000000"
+    android:backgroundTintMode="src_over"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/btnWelcome"
+        android:layout_width="360dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="67dp"
+        android:layout_marginBottom="150dp"
+        android:background="@drawable/bath_1"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Welcome"
+        app:iconTint="#2196F3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbWelCome" />
+
+    <ProgressBar
+        android:id="@+id/pbWelCome"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="375dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="399dp"
+        android:layout_marginBottom="67dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnWelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imgGif"
+        android:layout_width="348dp"
+        android:layout_height="284dp"
+        android:layout_marginTop="53dp"
+        android:layout_marginBottom="22dp"
+        android:cropToPadding="false"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toTopOf="@+id/pbWelCome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/homescreen_1" />
+
+    <TextView
+        android:id="@+id/txtMain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="27dp"
+        android:text="Little Pedro"
+        android:textColor="@color/design_default_color_error"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imgGif"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtAction"
+        android:layout_width="293dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginBottom="49dp"
+        android:textAlignment="textStart"
+        android:textColor="#03A9F4"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnWelcome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pbWelCome" />
+</androidx.constraintlayout.widget.ConstraintLayout>

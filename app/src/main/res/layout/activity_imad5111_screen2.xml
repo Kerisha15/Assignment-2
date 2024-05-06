@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rac"
+    android:backgroundTint="#63000000"
+    android:backgroundTintMode="src_over"
+    tools:context=".imad2act">
+
+    <Button
+        android:id="@+id/btnFeed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="8dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Feed"
+        app:layout_constraintBottom_toBottomOf="@+id/btnClean"
+        app:layout_constraintEnd_toStartOf="@+id/btnClean"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnClean" />
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="78dp"
+        android:layout_marginBottom="30dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Play"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnClean"
+        app:layout_constraintTop_toBottomOf="@+id/ProgrssClean" />
+
+    <Button
+        android:id="@+id/btnClean"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="24dp"
+        android:backgroundTint="@color/design_default_color_secondary"
+        android:text="Clean"
+        app:layout_constraintBottom_toBottomOf="@+id/btnPlay"
+        app:layout_constraintEnd_toStartOf="@+id/btnPlay"
+        app:layout_constraintStart_toEndOf="@+id/btnFeed"
+        app:layout_constraintTop_toTopOf="@+id/btnPlay" />
+
+    <ProgressBar
+        android:id="@+id/PogressFeed"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="218dp"
+        android:layout_height="17dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="5dp"
+        android:rotation="-90"
+        app:layout_constraintBottom_toTopOf="@+id/ProgrssClean"
+        app:layout_constraintEnd_toStartOf="@+id/ProgressPlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GifAction" />
+
+    <ProgressBar
+        android:id="@+id/ProgrssClean"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="217dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="97dp"
+        android:layout_marginBottom="121dp"
+        android:rotation="-90"
+        app:layout_constraintBottom_toTopOf="@+id/btnFeed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PogressFeed" />
+
+    <ProgressBar
+        android:id="@+id/ProgressPlay"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="214dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="157dp"
+        android:layout_marginBottom="5dp"
+        android:rotation="-90"
+        android:rotationY="0"
+        app:layout_constraintBottom_toTopOf="@+id/ProgrssClean"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/PogressFeed"
+        app:layout_constraintTop_toBottomOf="@+id/GifAction" />
+
+    <TextView
+        android:id="@+id/txtAction"
+        android:layout_width="326dp"
+        android:layout_height="63dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="Little Pedro"
+        android:textAlignment="center"
+        android:textColor="@color/design_default_color_secondary"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/GifAction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.47"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <ImageView
+        android:id="@+id/GifAction"
+        android:layout_width="224dp"
+        android:layout_height="216dp"
+        android:layout_marginStart="103dp"
+        android:layout_marginTop="83dp"
+        android:layout_marginEnd="104dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/second" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
